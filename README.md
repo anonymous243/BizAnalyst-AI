@@ -107,6 +107,11 @@ Open your browser to **http://localhost:3001**
 | `npm run clean` | Remove build artifacts |
 
 ---
+## Demo
+<img width="1313" height="608" alt="Screenshot 2026-03-25 at 10-51-13 BizAnalyst AI" src="https://github.com/user-attachments/assets/d2af8b56-24bb-4e47-98f0-eff10d6eac0e" />
+
+<img width="1313" height="608" alt="Screenshot 2026-03-25 at 10-51-35 BizAnalyst AI" src="https://github.com/user-attachments/assets/d2778fd2-a6d5-459f-a41d-e163077312d4" />
+
 
 ## 🏗️ Architecture
 
