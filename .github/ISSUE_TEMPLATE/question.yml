@@ -1,0 +1,43 @@
+---
+name: Question
+description: Ask a question about the project
+title: "[Question]: "
+labels: ["question", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about BizAnalyst AI? We're here to help!
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Please provide as much detail as possible.
+      placeholder: What would you like to know?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish? What have you tried so far?
+      placeholder: Provide any relevant context about your question.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version (if applicable)
+      description: What version of BizAnalyst AI are you using?
+      placeholder: "e.g., 1.0.0"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

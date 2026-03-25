@@ -1,0 +1,43 @@
+---
+name: Documentation Improvement
+description: Suggest improvements or additions to the documentation
+title: "[Docs]: "
+labels: ["documentation", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping to improve our documentation!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What documentation needs to be improved, added, or fixed?
+      placeholder: Describe the documentation issue...
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Affected Page
+      description: If applicable, provide a link to the page that needs improvement.
+      placeholder: "e.g., README.md, CONTRIBUTING.md"
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed Changes
+      description: Describe what changes you'd like to see.
+      placeholder: What should be added or changed?
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
