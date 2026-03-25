@@ -2,7 +2,7 @@
 
 # BizAnalyst AI
 
-**Open Source Data Analyst with AI-Powered Insights**
+**Open Source Business Data Analyst with AI-Powered Insights**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -10,7 +10,7 @@
 [![npm](https://img.shields.io/badge/npm-%3E%3D9.0.0-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-A professional-grade, open-source data analysis tool for automated data cleaning, visualization, and AI-powered insights.
+A professional-grade, open-source Business Data analysis tool for automated data cleaning, visualization, and AI-powered insights.
 
 [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Contributing](#-contributing) • [License](#-license)
 
@@ -36,8 +36,8 @@ A professional-grade, open-source data analysis tool for automated data cleaning
 ### Option 1: Clone from GitHub
 
 ```bash
-git clone https://github.com/yourusername/bizanalyst-ai.git
-cd bizanalyst-ai
+git clone https://github.com/anonymous243/BizAnalyst-AI
+cd BizAnalyst-AI
 npm install
 ```
 
@@ -83,7 +83,7 @@ GEMINI_API_KEY=your_api_key_here
 npm run dev
 ```
 
-Open your browser to **http://localhost:3000**
+Open your browser to **http://localhost:3001**
 
 ### 3. Upload Your Data
 
@@ -147,8 +147,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ```bash
 # Fork the repository
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/bizanalyst-ai.git
-cd bizanalyst-ai
+git clone https://github.com/anonymous243/BizAnalyst-AI
+cd BizAnalyst-AI
 
 # Install dependencies
 npm install
@@ -180,21 +180,6 @@ git push origin feature/your-feature-name
 
 This project is licensed under the [Apache License 2.0](LICENSE).
 
-```
-Copyright 2024 BizAnalyst AI Contributors
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
 
 ---
 
@@ -220,8 +205,8 @@ Please report security vulnerabilities responsibly. **Do not** create public iss
 ## 📞 Support
 
 - **Documentation**: See files in this repository
-- **Issues**: [GitHub Issues](https://github.com/yourusername/bizanalyst-ai/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/bizanalyst-ai/discussions)
+- **Issues**: [GitHub Issues](https://github.com/anonymous243/BizAnalyst-AI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/anonymous243/BizAnalyst-AI/discussions)
 
 ---
 
@@ -240,8 +225,8 @@ Built with amazing open source libraries:
 
 <div align="center">
 
-**Made with ❤️ by the BizAnalyst AI Contributors**
+**Made with ❤️**
 
-[Report Bug](https://github.com/yourusername/bizanalyst-ai/issues/new?template=bug_report.yml) • [Request Feature](https://github.com/yourusername/bizanalyst-ai/issues/new?template=feature_request.yml) • [Ask Question](https://github.com/yourusername/bizanalyst-ai/issues/new?template=question.yml)
+[Report Bug](https://github.com/anonymous243/BizAnalyst-AI/issues/new?template=bug_report.yml) • [Request Feature](https://github.com/anonymous243/BizAnalyst-AI/issues/new?template=feature_request.yml) • [Ask Question](https://github.com/anonymous243/BizAnalyst-AI/issues/new?template=question.yml)
 
 </div>

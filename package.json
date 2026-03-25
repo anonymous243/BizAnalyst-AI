@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Open source data analyst tool with AI-powered insights",
-  "author": "BizAnalyst AI Contributors",
+  "author": "BizAnalyst-AI Contributors",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anonymous243/bizanalyst-ai.git"
+    "url": "git+https://github.com/anonymous243/BizAnalyst-AI.git"
   },
-  "homepage": "https://github.com/anonymous243/bizanalyst-ai#readme",
+  "homepage": "https://github.com/anonymous243/BizAnalyst-AI#readme",
   "bugs": {
-    "url": "https://github.com/anonymous243/bizanalyst-ai/issues"
+    "url": "https://github.com/anonymous243/BizAnalyst-AI/issues"
   },
   "keywords": [
     "data-analysis",
@@ -25,7 +25,7 @@
     "typescript"
   ],
   "bin": {
-    "bizanalyst-ai": "./bin/cli.js"
+    "bizanalyst-ai": "bin/cli.js"
   },
   "files": [
     "dist",
@@ -34,7 +34,7 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
+    "dev": "vite --port=3001 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",

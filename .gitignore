@@ -44,6 +44,3 @@ Desktop.ini
 # Temporary files
 *.tmp
 *.temp
-
-# AI Assistant folders
-.qwen/
