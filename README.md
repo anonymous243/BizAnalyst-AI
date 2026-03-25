@@ -12,86 +12,72 @@
 
 A professional-grade, open-source data analysis tool for automated data cleaning, visualization, and AI-powered insights.
 
-[Features](#features) • [Install](#-installation) • [Documentation](#documentation) • [Contributing](#contributing) • [Security](#security)
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Contributing](#-contributing) • [License](#-license)
 
 </div>
 
 ---
 
-## Features
+## 📊 Features
 
-- 📊 **Interactive Visualizations** - Distributions, correlations, trends, and scatter plots
-- 🤖 **AI-Powered Insights** - Ask questions about your data using Google's Gemini AI
-- 🧹 **Smart Data Cleaning** - Professional auto-clean with outlier detection and imputation
-- 📁 **Multiple File Formats** - Support for CSV and Excel files (.csv, .xlsx, .xls)
-- 📷 **Export Charts** - Download any visualization as high-quality PNG
-- 🎨 **Presentation Mode** - Clean, distraction-free view for presentations
-- 🔍 **Global Filters** - Filter data across all views simultaneously
-- 📈 **Predictive Forecasting** - 30-day forecasting for time series data
+- **Interactive Visualizations** - Distributions, correlations, trends, and scatter plots
+- **AI-Powered Insights** - Ask questions about your data using generative AI
+- **Smart Data Cleaning** - Professional auto-clean with outlier detection and imputation
+- **Multiple File Formats** - Support for CSV and Excel files (.csv, .xlsx, .xls)
+- **Export Charts** - Download any visualization as high-quality PNG
+- **Presentation Mode** - Clean, distraction-free view for presentations
+- **Global Filters** - Filter data across all views simultaneously
+- **Predictive Forecasting** - Time series forecasting capabilities
+
+---
 
 ## 📦 Installation
 
-Choose the method that works best for you:
-
-### Option 1: Download from GitHub (Recommended)
+### Option 1: Clone from GitHub
 
 ```bash
-# Clone the repository
-git clone https://github.com/anonymous243/bizanalyst-ai.git
+git clone https://github.com/yourusername/bizanalyst-ai.git
 cd bizanalyst-ai
-
-# Install dependencies
 npm install
-
-# Set up environment
-cp .env.example .env.local
-# Edit .env.local and add your Gemini API key
-
-# Start development server
-npm run dev
 ```
 
-**Or download as ZIP:** Click **Code** → **Download ZIP** on [GitHub](https://github.com/anonymous243/bizanalyst-ai)
+### Option 2: Download ZIP
 
-### Option 2: Use npx (No Installation)
+1. Click **Code** → **Download ZIP** on GitHub
+2. Extract the ZIP file
+3. Run `npm install` in the extracted folder
+
+### Option 3: Install via npm
+
+```bash
+npm install -g bizanalyst-ai
+```
+
+### Option 4: Use npx (No Installation)
 
 ```bash
 npx bizanalyst-ai
 ```
 
-### Option 3: Install Globally via npm
-
-```bash
-npm install -g bizanalyst-ai
-bizanalyst-ai
-```
-
-> 📖 See [INSTALL.md](INSTALL.md) for detailed installation guide and troubleshooting.
-
 ---
 
-## Quick Start
+## 🚀 Usage
 
-### Prerequisites
-
-- **Node.js** >= 18.0.0
-- **npm** >= 9.0.0
-- **Gemini API Key** (free from [Google AI Studio](https://makersuite.google.com/app/apikey))
-
-### First Time Setup
+### 1. Set Up Environment
 
 ```bash
-# Set up environment
 cp .env.example .env.local
 ```
 
-Edit `.env.local` and add your Gemini API key:
+Edit `.env.local` and add your API key:
 
 ```bash
-GEMINI_API_KEY=your_actual_api_key_here
+GEMINI_API_KEY=your_api_key_here
 ```
 
-### Run the App
+> Get your free API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+
+### 2. Start Development Server
 
 ```bash
 npm run dev
@@ -99,51 +85,60 @@ npm run dev
 
 Open your browser to **http://localhost:3000**
 
-### Build for Production
+### 3. Upload Your Data
 
-```bash
-npm run build
-npm run preview
+- Click **Upload CSV/XLSX** or drag and drop a file
+- Review auto-generated insights
+- Use one-click cleaning actions if needed
+- Explore visualizations across different tabs
+- Ask the AI Analyst questions about your data
+- Download charts using the 📷 camera icon
+
+---
+
+## 📋 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run TypeScript type checking |
+| `npm run clean` | Remove build artifacts |
+
+---
+
+## 🏗️ Architecture
+
+### Technology Stack
+
+- **Frontend Framework**: React 19 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Visualization**: Recharts
+- **AI Integration**: Google Gemini API
+- **Data Processing**: Papa Parse (CSV), XLSX (Excel)
+- **Icons**: Lucide React
+
+### Project Structure
+
+```
+bizanalyst-ai/
+├── src/
+│   ├── App.tsx           # Main application component
+│   ├── analyst.ts        # Data analysis utilities
+│   ├── types.ts          # TypeScript type definitions
+│   └── lib/
+│       └── utils.ts      # Utility functions
+├── .github/              # GitHub templates and workflows
+├── bin/                  # CLI executables
+├── dist/                 # Production build output
+└── docs/                 # Documentation files
 ```
 
 ---
 
-## Documentation
-
-### Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with hot reload |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run TypeScript type checking |
-| `npm run clean` | Remove build artifacts |
-
-### Usage Guide
-
-1. **Upload Your Data**: Click "Upload CSV/XLSX" or drag and drop a file
-2. **Review Insights**: Check the Auto Insights panel for data quality issues
-3. **Clean Data**: Use one-click cleaning actions or enable "Professional Auto-Clean"
-4. **Explore Visualizations**: Navigate through Distributions, Correlations, and Trends tabs
-5. **Ask AI Questions**: Use the AI Analyst tab to ask questions about your data
-6. **Export Charts**: Click the 📷 camera icon on any chart to download as PNG
-
-### Global Filters
-
-Filter your dataset by categorical columns with low cardinality (<15 unique values). Filters apply across all views.
-
-### Expert Mode: Professional Auto-Clean
-
-When enabled, automatically:
-- Removes duplicate rows
-- Imputes missing values (median for numeric, mode for categorical)
-- Clips outliers using IQR method
-- Groups high-cardinality categories
-
----
-
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
@@ -181,37 +176,7 @@ git push origin feature/your-feature-name
 
 ---
 
-## Security
-
-⚠️ **IMPORTANT: API Key Security**
-
-BizAnalyst AI requires a Gemini API key. Follow these security best practices:
-
-1. **Never commit your API key** - `.env.local` is gitignored by default
-2. **Use separate keys** for development and production
-3. **For production**, implement a backend proxy to avoid exposing keys client-side
-4. **Monitor API usage** for unusual activity
-
-See our [Security Policy](SECURITY.md) for more details.
-
-### Reporting Vulnerabilities
-
-Please report security vulnerabilities responsibly via GitHub Security Advisories or email. **Do not** create public issues for security concerns.
-
----
-
-## Technology Stack
-
-- **Frontend**: React 19, TypeScript, Tailwind CSS
-- **Build Tool**: Vite
-- **Visualization**: Recharts
-- **AI**: Google Gemini API
-- **Data Processing**: Papa Parse (CSV), XLSX (Excel)
-- **Icons**: Lucide React
-
----
-
-## License
+## 📄 License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
 
@@ -233,12 +198,43 @@ limitations under the License.
 
 ---
 
-## Acknowledgments
+## 🔒 Security
 
-- Built with [Google Gemini AI](https://ai.google.dev/)
-- UI components from [Lucide Icons](https://lucide.dev/)
-- Charts powered by [Recharts](https://recharts.org/)
-- Styling with [Tailwind CSS](https://tailwindcss.com/)
+### API Key Security
+
+⚠️ **Important**: This application requires an API key for AI features.
+
+- Never commit your API key to version control
+- Use `.env.local` for local development (already gitignored)
+- For production, implement a backend proxy
+- Monitor API usage for unusual activity
+
+See [SECURITY.md](SECURITY.md) for our full security policy.
+
+### Reporting Vulnerabilities
+
+Please report security vulnerabilities responsibly. **Do not** create public issues for security concerns. See [SECURITY.md](SECURITY.md) for reporting guidelines.
+
+---
+
+## 📞 Support
+
+- **Documentation**: See files in this repository
+- **Issues**: [GitHub Issues](https://github.com/yourusername/bizanalyst-ai/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/yourusername/bizanalyst-ai/discussions)
+
+---
+
+## 🙏 Acknowledgments
+
+Built with amazing open source libraries:
+
+- [React](https://react.dev/) - UI framework
+- [Recharts](https://recharts.org/) - Charting library
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Lucide Icons](https://lucide.dev/) - Icon library
+- [Papa Parse](https://www.papaparse.com/) - CSV parsing
+- [XLSX](https://sheetjs.com/) - Excel file processing
 
 ---
 
@@ -246,6 +242,6 @@ limitations under the License.
 
 **Made with ❤️ by the BizAnalyst AI Contributors**
 
-[Report Bug](https://github.com/anonymous243/bizanalyst-ai/issues/new?template=bug_report.yml) • [Request Feature](https://github.com/anonymous243/bizanalyst-ai/issues/new?template=feature_request.yml) • [Ask Question](https://github.com/anonymous243/bizanalyst-ai/issues/new?template=question.yml)
+[Report Bug](https://github.com/yourusername/bizanalyst-ai/issues/new?template=bug_report.yml) • [Request Feature](https://github.com/yourusername/bizanalyst-ai/issues/new?template=feature_request.yml) • [Ask Question](https://github.com/yourusername/bizanalyst-ai/issues/new?template=question.yml)
 
 </div>
